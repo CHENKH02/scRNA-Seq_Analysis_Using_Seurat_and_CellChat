@@ -101,7 +101,6 @@ Low-quality cells, doublets, and stressed cells were removed using threshold-bas
 
 #### QC Violin Plot
 ![QC](qc.png)
-
 QC metrics indicate overall good-quality cells with controlled mitochondrial content.
 
 **2. Normalization and Feature Selection**
