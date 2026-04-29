@@ -102,6 +102,8 @@ Low-quality cells, doublets, and stressed cells were removed using threshold-bas
 #### QC Violin Plot
 ![QC](qc.png)
 
+QC metrics indicate overall good-quality cells with controlled mitochondrial content.
+
 **2. Normalization and Feature Selection**
 
 Raw counts were normalized using log-normalization to correct for differences in sequencing depth across cells, enabling meaningful comparison of gene expression levels. 
@@ -120,12 +122,16 @@ UMAP was used to visualize the resulting clusters in a low-dimensional space.
 #### UMAP Clustering
 ![UMAP](umap.png)
 
+Cells separate into distinct clusters, indicating clear transcriptional heterogeneity within the dataset.
+
 **4. Marker Gene Identification**
 
 Cluster-specific marker genes were identified using the Wilcoxon rank-sum test, comparing gene expression between each cluster and all other cells.These markers represent genes that are significantly enriched in specific clusters and define the molecular identity of each cell population.
 
 #### Marker Gene Heatmap
 ![Heatmap](heatmap.png)
+
+Cluster-specific marker genes show distinct expression patterns, supporting the molecular identity of each cell population.
 
 **5. Cell Type Annotation**
 
@@ -139,6 +145,8 @@ Over-representation analysis (ORA) was performed on marker genes associated with
 #### Pathway Enrichment (ORA)
 ![ORA](ora.png)
 
+Enriched KEGG pathways highlight functional differences and biological processes associated with each cell type.
+
 **7. Cell–Cell Communication Analysis**
 
 CellChat was used to infer potential ligand–receptor interactions between cell types based on their gene expression profiles, which enables the characterization of intercellular communication networks, including the identification of signaling sources (sender cells), signaling targets (receiver cells), and the relative strength and number of inferred interactions.
@@ -146,10 +154,15 @@ CellChat was used to infer potential ligand–receptor interactions between cell
 #### Cell–Cell Communication (Number of Interactions)
 ![CellChat Count](cellchat_count.png)
 
+The network shows the number of inferred ligand–receptor interactions between cell types, indicating overall communication activity.
+
 #### Cell–Cell Communication (Interaction Strength)
 ![CellChat Weight](cellchat_weight.png)
+
+Interaction strength reflects the intensity of signaling between cell types, suggesting dominant communication pathways.
 
 #### Sender vs Receiver Roles
 ![CellChat Roles](cellchat_roles.png)
 
+Cell types are positioned based on their signaling roles, distinguishing major signal senders from receivers in the network.
 
