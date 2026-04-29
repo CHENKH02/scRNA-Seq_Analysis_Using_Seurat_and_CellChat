@@ -149,13 +149,13 @@ CellChat was used to infer potential ligand–receptor interactions between cell
 
 #### Cell–Cell Communication (Number of Interactions)
 ![CellChat Count](cellchat_count.png)
-*The network shows the number of inferred ligand–receptor interactions between cell types, indicating overall communication activity.*
+*The network shows the number of inferred ligand–receptor interactions between cell types, with T cells and B cells exhibit the highest number of interactions, suggesting they are the most actively communicating cell types, while macrophages display minimal connectivity..*
 
 #### Cell–Cell Communication (Interaction Strength)
 ![CellChat Weight](cellchat_weight.png)
-*Interaction strength reflects the intensity of signaling between cell types, suggesting dominant communication pathways.*
+*Interaction strength reflects the intensity of signaling between cell types, the interaction strength is highest between T cells and B cells, while macrophages show minimal contribution to the communication network..*
 
 #### Sender vs Receiver Roles
 ![CellChat Roles](cellchat_roles.png)
-*Cell types are positioned based on their signaling roles, distinguishing major signal senders from receivers in the network.*
+*Cell types are positioned based on their signaling roles, hematopoietic cells act as dominant signal senders, while leukocytes and B cells show strong incoming signaling, indicating they function primarily as receivers, and macrophages exhibit minimal signaling activity.*
 
