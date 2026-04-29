@@ -103,12 +103,14 @@ Low-quality cells, doublets, and stressed cells were removed using threshold-bas
 ![QC](qc.png)
 
 **2. Normalization and Feature Selection**
+
 Raw counts were normalized using log-normalization to correct for differences in sequencing depth across cells, enabling meaningful comparison of gene expression levels. 
 
 Highly variable genes were then identified, which capture the most informative biological variability and drive downstream dimensionality reduction and clustering.
 
 
 **3. Dimensionality Reduction and Clustering**
+
 Principal Component Analysis was applied to reduce the dimensionality of the dataset by summarizing gene expression into major axes of variation.
 
 Based on the selected principal components, a shared nearest neighbor graph was constructed, and cells were clustered according to transcriptional similarity.
@@ -119,22 +121,26 @@ UMAP was used to visualize the resulting clusters in a low-dimensional space.
 ![UMAP](umap.png)
 
 **4. Marker Gene Identification**
+
 Cluster-specific marker genes were identified using the Wilcoxon rank-sum test, comparing gene expression between each cluster and all other cells.These markers represent genes that are significantly enriched in specific clusters and define the molecular identity of each cell population.
 
 #### Marker Gene Heatmap
 ![Heatmap](heatmap.png)
 
 **5. Cell Type Annotation**
+
 Clusters were annotated by matching cell barcodes with an external cell type annotation table, assigning biological meaning to transcriptionally defined clusters and enables interpretation of cellular composition within the dataset.
 
 
 **6. Pathway Enrichment Analysis**
+
 Over-representation analysis (ORA) was performed on marker genes associated with each cell type using KEGG pathway gene sets, which identified biological pathways that were significantly enriched within specific cell populations, providing functional insight into their roles.
 
 #### Pathway Enrichment (ORA)
 ![ORA](ora.png)
 
 **7. Cell–Cell Communication Analysis**
+
 CellChat was used to infer potential ligand–receptor interactions between cell types based on their gene expression profiles, which enables the characterization of intercellular communication networks, including the identification of signaling sources (sender cells), signaling targets (receiver cells), and the relative strength and number of inferred interactions.
 
 #### Cell–Cell Communication (Number of Interactions)
