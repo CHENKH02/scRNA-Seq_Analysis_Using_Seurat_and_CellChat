@@ -81,7 +81,7 @@ qc_plot <- p1 + p2 + p3
 qc_plot
 
 #Save QC plots
-ggsave("qc.png", plot = qc_plot, width = 9, height = 4)
+ggsave("qc.png", plot = qc_plot, width = 10, height = 5)
 
 #Explore QC relationships,Check relationships between QC metrics
 FeatureScatter(
