@@ -140,7 +140,7 @@ Clusters were annotated by matching cell barcodes with an external cell type ann
 Over-representation analysis (ORA) was performed on marker genes associated with each cell type using KEGG pathway gene sets, which identified biological pathways that were significantly enriched within specific cell populations, providing functional insight into their roles.
 
 #### Pathway Enrichment (ORA)
-![ORA](ora.png)
+![ORA](ora.scRNA.png)
 *Enriched KEGG pathways highlight functional differences and biological processes associated with each cell type.*
 
 **7. Cell–Cell Communication Analysis**
