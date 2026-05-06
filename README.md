@@ -1,7 +1,7 @@
 # scRNA-seq-Analysis-Using-Seurat-and-CellChat
 
 ## Project Overview
-This project implements a complete single-cell RNA sequencing (scRNA-seq) analysis workflow in R, from raw count data to biological interpretation. The pipeline integrates data preprocessing, clustering, cell type annotation, functional enrichment analysis, and cell–cell communication inference, providing a multi-layered understanding of cellular heterogeneity and intercellular signaling.
+This project - within the  "computational approaches for OMICS" class (Biomedical Omics degree, University of Milan, 2025-2026) by Prof Matteo Cereda (https://github.com/ceredamatteo-lab) - implements a complete single-cell RNA sequencing (scRNA-seq) analysis workflow in R, from raw count data to biological interpretation. The pipeline integrates data preprocessing, clustering, cell type annotation, functional enrichment analysis, and cell–cell communication inference, providing a multi-layered understanding of cellular heterogeneity and intercellular signaling.
 
 
 
@@ -159,3 +159,8 @@ CellChat was used to infer potential ligand–receptor interactions between cell
 ![CellChat Roles](cellchat_roles.png)
 *Cell types are positioned based on their signaling roles, hematopoietic cells act as dominant signal senders, while leukocytes and B cells show strong incoming signaling, indicating they function primarily as receivers, and macrophages exhibit minimal signaling activity.*
 
+## Contributors
+
+- Main developer: Kehan Chen
+- Supervisor: Mariachiara Grieco
+  
